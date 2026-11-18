@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RaffaelloXp</title>
+  <meta name="description" content="Quadros das obras explicadas no @raffaelloxp. Moldura de madeira, acrílico cristal e papel fosco 230 g.">
+  <meta name="theme-color" content="#f3ead7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1>RaffaelloXp</h1>
+    <p>Quadros das obras explicadas no <a href="https://www.instagram.com/raffaelloxp/" target="_blank" rel="noopener">@raffaelloxp</a></p>
+  </header>
+
+  <main>
+    <section class="grade" id="grade" aria-label="Quadros"></section>
+  </main>
+
+  <footer class="rodape">
+    <p>O pedido é confirmado quando eu responder e o Pix for recebido. Cada quadro é produzido sob encomenda. Prazo médio: até 15 dias úteis após o pagamento, já contando a entrega.</p>
+    <p class="rodape-assinatura"><a href="https://www.instagram.com/raffaelloxp/" target="_blank" rel="noopener">@raffaelloxp</a> no Instagram</p>
+  </footer>
+
+  <!-- Botão fixo do carrinho -->
+  <button class="botao-carrinho" id="abrirCarrinho" type="button" aria-controls="carrinho" aria-expanded="false">
+    Carrinho <span class="contador" id="contador">0</span>
+  </button>
+
+  <!-- Carrinho -->
+  <div class="fundo" id="fundo" hidden></div>
+  <aside class="carrinho" id="carrinho" aria-label="Carrinho" aria-hidden="true">
+    <div class="carrinho-topo">
+      <h2>Carrinho</h2>
+      <button class="fechar" id="fecharCarrinho" type="button" aria-label="Fechar carrinho">Fechar</button>
+    </div>
+
+    <ul class="itens" id="itens"></ul>
+    <p class="vazio" id="vazio">Seu carrinho está vazio.</p>
+
+    <div class="carrinho-fim">
+      <p class="total">Total dos quadros <strong id="total">R$ 0,00</strong></p>
+      <p class="frete">Frete calculado pelo WhatsApp, conforme o seu CEP.</p>
+      <button class="botao-principal" id="finalizar" type="button" disabled>Finalizar pelo WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
